@@ -1,0 +1,81 @@
+.invoice-section {
+  .section-header {
+    background-color: #e7eefb;
+    color: #000;
+    font-weight: 600;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    margin: 5px;
+  }
+
+  .invoice-table {
+     font-size: 0.35rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    &__header,
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      padding: 5px;
+      font-size: 0.75rem !important;
+       align-items: flex-start;
+    
+    }
+
+   
+  }
+
+  .payment-summary {
+   
+    border-radius: 5px;
+   
+    overflow: hidden;
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+    
+      font-size: 0.75rem;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &.total {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+
+    .method {
+      background-color: #f5f5f5;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 0.75rem;
+
+      &:hover {
+        background-color: #dbe9ff;
+      }
+    }
+  }
+
+  #popup  {
+    position: absolute;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: 0 !important;
+  left: 0 !important;
+  
+}
+}

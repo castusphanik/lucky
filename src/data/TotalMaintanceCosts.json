@@ -1,0 +1,50 @@
+[
+  {
+    "month": "Jan",
+    "cost": 8000
+  },
+  {
+    "month": "Feb",
+    "cost": 2500
+  },
+  {
+    "month": "Mar",
+    "cost": 5000
+  },
+  {
+    "month": "Apr",
+    "cost": 9500
+  },
+  {
+    "month": "May",
+    "cost": 9500
+  },
+  {
+    "month": "Jun",
+    "cost": 3800
+  },
+  {
+    "month": "Jul",
+    "cost": 500
+  },
+    {
+    "month": "Aug",
+    "cost": 10000
+  },
+  {
+    "month": "Sep",
+    "cost": 6200
+  },
+  {
+    "month": "Oct",
+    "cost": 2200
+  },
+  {
+    "month": "Nov",
+    "cost": 5000
+  },
+  {
+    "month": "Dec",
+    "cost": 1800
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Doors",
+    "value": 1200
+  },
+  {
+    "label": "Refrigeration",
+    "value": 900
+  },
+  {
+    "label": "Tires",
+    "value": 600
+  },
+  {
+    "label": "Soundframe",
+    "value": 950
+  },
+  {
+    "label": "Lights",
+    "value": 700
+  },
+  {
+    "label": "Brakes",
+    "value": 1150
+  },
+  {
+    "label": "Liftgate",
+    "value": 820
+  }
+]

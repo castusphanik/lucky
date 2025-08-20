@@ -1,0 +1,30 @@
+.radio-group {
+  &__options-container {
+    display: flex;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+
+    P {
+      font-size: 0.85rem;
+    }
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  input[type="radio"] {
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &:checked {
+      accent-color: var(--color-primary);
+    }
+  }
+}

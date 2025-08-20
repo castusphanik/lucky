@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Tires",
+    "value": 8000
+  },
+  {
+    "label": "Subframe",
+    "value": 2500
+  },
+  {
+    "label": "Refrigeration",
+    "value": 5000
+  },
+  {
+    "label": "Doors",
+    "value": 9000
+  },
+  {
+    "label": "Liftgate",
+    "value": 9000
+  },
+  {
+    "label": "Lights",
+    "value": 3800
+  },
+  {
+    "label": "Brakes",
+    "value": 3900
+  }
+]

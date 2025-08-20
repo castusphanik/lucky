@@ -1,0 +1,317 @@
+.logoHeading {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+.invoiceLabel {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+.invoiceNumber {
+  /* font-size: 18px; */
+  font-weight: 600;
+  color: #333;
+}
+
+.mainContent {
+  /* background-color: pink; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  /* margin-bottom: 40px; */
+}
+
+/* 
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: red;
+} */
+
+.sectionTitle {
+  /* font-size: 18px; */
+  font-weight: 550;
+  color: #333;
+  padding-bottom:5px;
+}
+.sectionTitleEqp{
+  font-weight: 550;
+  color: #333;
+  padding: 15px 0px 5px 0px;
+}
+.detailRow {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 2px solid rgb(180, 207, 232);
+  background-color: aliceblue;
+}
+/* .detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 2px solid rgb(180, 207, 232);
+  background-color: aliceblue;
+
+} */
+
+.label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+  /* background-color: aliceblue; */
+}
+
+.value {
+  font-size: 14px;
+  color: #333;
+}
+
+.tableContainer {
+  margin-top: 10px;
+  border: 1px solid rgb(207, 220, 233);
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  padding: 16px;
+  background-color: aliceblue;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.tableHeaderCell {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.tableHeaderCellr {
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+  /* justify-content: space-between; */
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tableCell {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.tableCellr {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.totalsSection {
+  display: flex;
+  flex-direction: column;
+  /* gap: 12px; */
+  margin: 20px 0px;
+  /* padding-top: 20px; */
+  background-color: aliceblue;
+}
+
+.totalRow {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  align-items: center;
+  padding: 8px 15px 8px 15px;
+  border-bottom: 2px solid rgb(180, 207, 232);
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0px 8px 15px;
+  border-bottom: 2px solid rgb(180, 207, 232); */
+
+}
+
+.totalLabel {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.totalValue {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  padding-right: 100px;
+}
+.actionButtons{
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {  
+  .mainContent {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .detailRow {
+    grid-template-columns: 120px 1fr;
+    gap: 10px;
+    padding: 12px 8px;
+  }
+  .tableHeader {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 8px;
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+  .tableRow {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 8px;
+    padding: 12px 8px;
+  }
+  
+  .totalRow {
+    grid-template-columns: 1fr auto;
+    padding: 10px 8px;
+  }
+  
+  .totalValue {
+    padding-right: 0;
+    text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 120px;
+  }
+  
+  .invoiceLabel {
+    font-size: 12px;
+  }
+  
+  .invoiceNumber {
+    font-size: 14px;
+  }
+  
+  .sectionTitle {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+  
+  .sectionTitleEqp {
+    font-size: 16px;
+    padding: 10px 0px 8px 0px;
+  }
+  
+  .detailRow {
+    grid-template-columns: 100px 1fr;
+    gap: 8px;
+    padding: 10px 6px;
+  }
+  
+  .label {
+    font-size: 12px;
+  }
+  
+  .value {
+    font-size: 12px;
+  }
+  
+  .tableHeader {
+    padding: 10px 6px;
+    font-size: 11px;
+  }
+  
+  .tableRow {
+    padding: 10px 6px;
+  }
+  
+  .tableCell {
+    font-size: 11px;
+  }
+  
+  .tableCellr {
+    font-size: 11px;
+  }
+  
+  .totalRow {
+    padding: 8px 6px;
+  }
+  
+  .totalLabel {
+    font-size: 12px;
+  }
+  
+  .totalValue {
+    font-size: 12px;
+  }
+  .actionButtons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) { 
+  .logo img {
+    max-width: 100px;
+  }
+  
+  .detailRow {
+    grid-template-columns: 80px 1fr;
+    gap: 6px;
+    padding: 8px 4px;
+  }
+  
+  .tableHeader {
+    grid-template-columns: 1.5fr 0.75fr 0.75fr;
+    gap: 4px;
+    padding: 8px 4px;
+    font-size: 10px;
+  }
+  
+  .tableRow {
+    grid-template-columns: 1.5fr 0.75fr 0.75fr;
+    gap: 4px;
+    padding: 8px 4px;
+  }
+  
+  .tableCell {
+    font-size: 10px;
+  }
+  
+  .tableCellr {
+    font-size: 10px;
+  }
+  
+  .totalRow {
+    padding: 6px 4px;
+  }
+  
+  .sectionTitle {
+    font-size: 14px;
+  }
+  
+  .sectionTitleEqp {
+    font-size: 14px;
+  }
+  .actionButtons button {
+    width: 100%;
+  } 
+}

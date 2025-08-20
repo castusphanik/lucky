@@ -1,0 +1,51 @@
+.geofence-details-page {
+  background-color: var(--color-light);
+  padding: 5px;
+  border-radius: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__info {
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+
+    // Custom styling for two-column layout with border
+    .detailed-overview {
+      display: flex;
+      gap: 0;
+
+      .detailed-overview__overview-card {
+        flex: 1;
+
+        &:first-child {
+          border-right: 1px solid #ddd;
+        }
+      }
+
+      .detailed-overview__card-details {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__map {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    min-height: 400px;
+  }
+}
+
+.geofence-details-loading {
+  background-color: var(--color-light);
+  padding: 5px;
+  border-radius: 20px;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -1,0 +1,47 @@
+.content {
+  margin-top:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+}
+
+.chartWrapper {
+  width: 50px;
+  height: 200px;
+}
+
+.textInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #374151;
+}
+
+.label {
+  color: #6b7280;
+}
+
+.value {
+  font-weight: 600;
+}
+
+.compliance {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.expandLink {
+  font-size: 14px;
+  color: #1d4ed8;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 4px;
+}

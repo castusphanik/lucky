@@ -1,0 +1,100 @@
+.dashboard {
+  padding: 20px 0px;
+  /* background-color: #e51b1b; */
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  max-width: 1400px;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  border-left: 9px solid; 
+  max-height: 100px;
+  /* max-width: 1%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardTitle {
+  font-size: 15px;
+  color: #666;
+  /* margin: 0 0 12px 0; */
+  line-height: 1.4;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.cardValue {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0;
+  color: #4365a8 ; 
+  text-decoration: underline;
+  align-self: flex-start;
+}
+
+/* Color variants for left border */
+.blue {
+  border-left-color: #2196f3;
+}
+
+.green {
+  border-left-color: #4caf50;
+}
+
+.red {
+  border-left-color: #f44336;
+}
+.darkBlue{
+  border-left-color: #2e355b;
+}
+ 
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .cardsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cardsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+  
+  .cardValue {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

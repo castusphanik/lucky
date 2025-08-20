@@ -1,16 +1,16 @@
-import React, { type FormEvent, useCallback, useState } from "react";
-import { useMapsLibrary } from "@vis.gl/react-google-maps";
-import { useAutocompleteSuggestions } from "../hooks/use-autocomplete-suggestions";
-import "./styles.css";
+import React, { type FormEvent, useCallback, useState } from 'react';
+import { useMapsLibrary } from '@vis.gl/react-google-maps';
+import { useAutocompleteSuggestions } from '@/hooks/use-autocomplete-suggestions';
+import './styles.scss';
 
 interface Props {
   onPlaceSelect: (place: google.maps.places.Place | null) => void;
 }
 
 export const AutocompleteCustom = ({ onPlaceSelect }: Props) => {
-  const places = useMapsLibrary("places");
+  const places = useMapsLibrary('places');
 
-  const [inputValue, setInputValue] = useState<string>("");
+  const [inputValue, setInputValue] = useState<string>('');
   const { suggestions, resetSession } = useAutocompleteSuggestions(inputValue);
 
   const handleInput = useCallback((event: FormEvent<HTMLInputElement>) => {
@@ -25,15 +25,10 @@ export const AutocompleteCustom = ({ onPlaceSelect }: Props) => {
       const place = suggestion.placePrediction.toPlace();
 
       await place.fetchFields({
-        fields: [
-          "viewport",
-          "location",
-          "svgIconMaskURI",
-          "iconBackgroundColor",
-        ],
+        fields: ['viewport', 'location', 'svgIconMaskURI', 'iconBackgroundColor'],
       });
 
-      setInputValue("");
+      setInputValue('');
 
       // calling fetchFields invalidates the session-token, so we now have to call
       // resetSession() so a new one gets created for further search
@@ -48,23 +43,25 @@ export const AutocompleteCustom = ({ onPlaceSelect }: Props) => {
     <div className="autocomplete-container">
       <input
         value={inputValue}
-        onInput={(event) => handleInput(event)}
+        onInput={event => handleInput(event)}
         placeholder="Search for a place"
       />
 
       {suggestions.length > 0 && (
         <ul className="custom-list">
-          {suggestions.map((suggestion, index) => {
-            return (
-              <li
-                key={index}
-                className="custom-list-item"
-                onClick={() => handleSuggestionClick(suggestion)}
-              >
-                {suggestion.placePrediction?.text.text}
-              </li>
-            );
-          })}
+          {suggestions.map(
+            (suggestion: google.maps.places.AutocompleteSuggestion, index: number) => {
+              return (
+                <li
+                  key={index}
+                  className="custom-list-item"
+                  onClick={() => handleSuggestionClick(suggestion)}
+                >
+                  {suggestion.placePrediction?.text.text}
+                </li>
+              );
+            }
+          )}
         </ul>
       )}
     </div>

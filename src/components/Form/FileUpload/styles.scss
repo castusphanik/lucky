@@ -1,0 +1,156 @@
+.file-upload {
+  width: 100%;
+  margin: 5px 0;
+
+  
+
+  input[type="file"] {
+    display: none;
+  }
+
+  &__wrapper {
+    flex: 1;
+    cursor: pointer;
+  }
+
+   .label-element{
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-text);
+    font-weight: 400;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #77A2FE;
+    padding: 10px;
+  }
+
+  &__left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width:50%;
+
+    img {
+      margin-top: 3px;
+      width: 20px;
+      height:20px;
+    }
+
+    h4 {
+      font-size: 12px;
+      color: #1d2534;
+    }
+
+    P {
+      font-size: 13px;
+      color: #566d80;
+    }
+  }
+
+  &__label-button {
+    padding: 8px 10px;
+    width:80px;
+    text-align: center;
+    background: var(--color-secondary);
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: var(--font-primary);
+    flex-shrink: 0;
+  }
+
+  &__preview-container {
+    margin: 15px 0;
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+  }
+
+  &__pdf-preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #eff1f4;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    height: fit-content;
+    flex-shrink: 0;
+
+    img {
+      width: 25px;
+
+      &:last-child {
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__image-preview-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: none;
+
+    span {
+      z-index: 10;
+      position: relative;
+      left: 3px;
+      background: #ddd;
+      color: #000;
+      bottom: 25px;
+      font-size: 0.75rem;
+    }
+
+    .image-preview {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: none;
+    }
+
+    .delete-icon {
+      cursor: pointer;
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      width: 25px;
+    }
+  }
+
+   .required {
+    color: red;
+    margin-left: 2px;
+  }
+
+
+  @media screen and (max-width: 530px) {
+    &__container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__label-button {
+      margin-top: 10px;
+    }
+  }
+}

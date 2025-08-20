@@ -1,0 +1,29 @@
+.request-service-history {
+  padding: 0.5rem 1rem;
+
+  &__actions-container {
+    width: fit-content;
+    margin-left: auto;
+
+    button {
+      padding: 0.4rem 0.85rem !important;
+      font-size: 0.9rem !important;
+    }
+
+    .filter-btn {
+      border-color: #00000020;
+      color: #000000;
+
+      &.active {
+        border-color: transparent;
+        background-color: #1c8c6e;
+        color: #fff;
+      }
+    }
+
+    .filter-icon {
+      filter: invert(100%) sepia(44%) saturate(0%) hue-rotate(144deg) brightness(108%)
+        contrast(101%);
+    }
+  }
+}

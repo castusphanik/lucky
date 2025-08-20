@@ -1,0 +1,24 @@
+.emeregency-response-container {
+background-color: #FFFFFF;
+box-shadow: none;
+border-radius: 15px;
+ min-height: 80vh;
+ width:100%;
+}
+.emeregency-response-container__header-portion{
+  margin-top:20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-right:13px;
+  margin-top:4px;
+  padding: 10px;
+
+}
+.emeregency-response-container__body-content{
+  width:98%;
+  // height:50%;
+  margin-top: 50px;
+  margin-left: 12px;
+}

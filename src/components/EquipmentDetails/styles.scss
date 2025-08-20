@@ -1,0 +1,133 @@
+.equipment-details {
+    margin: 10px 5px;
+
+    &__header {
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+
+        .van-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: rgb(231, 227, 227);
+        }
+    }
+
+    &__header-left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 50%;
+
+        div>p:nth-child(1) {
+            color: #636569;
+            font-size: .9rem;
+        }
+
+        div>p:nth-child(3) {
+            color: #636569;
+            font-size: .95rem;
+        }
+    }
+
+    &__header-right {}
+
+    &__gps-head {
+        color: black;
+        font-size: .95rem;
+        font-weight: 600;
+    }
+
+    &__gps-info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+        row-gap: 5px;
+        font-size: 13px;
+        margin: 3px 0 10px 0;
+    }
+
+    .item-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .item-2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .item-3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .item-4 {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    .item-5 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    &__info-row>p:nth-child(1) {
+        color: #636569;
+    }
+
+    &__info-row>p:nth-child(2) {
+        color: black;
+        font-weight: 600;
+    }
+
+    &__telematics-link {
+        color: #2550b2;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    &__line {
+        border: none;
+        height: 1.5px;
+        background-color: #d3dbe2;
+        width: 100%;
+    }
+
+    &__title {
+        color: black;
+        font-size: .95rem;
+        font-weight: 600;
+        margin: 1rem 0 8px 0;
+    }
+
+    &__spec-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        //gap: 1rem 2rem;
+        max-width: 80%;
+        font-size: .8rem;
+    }
+
+    &__spec-item {
+        display: flex;
+        gap: 0.5rem;
+        background-color: #ecf3ff;
+        padding: 0.4rem 0;
+        border-bottom: 1.5px solid #c7d7f1;
+    }
+
+    &__label {
+        min-width: 130px;
+        padding-left: 10px;
+        color: #706e6e;
+    }
+
+    &__value {
+        color: black;
+    }
+}

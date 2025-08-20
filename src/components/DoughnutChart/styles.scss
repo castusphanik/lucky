@@ -1,0 +1,19 @@
+.doughnutChartContainer {
+  width: 400px ;
+  height: 300px;
+  /* max-width: 600px; */
+  margin: 0;
+  /* padding: 20px; */
+}
+
+.doughnutChartMain {
+  position: relative;
+  height: 220px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .doughnutChartMain {
+    height: 260px;
+  }
+}

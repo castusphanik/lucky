@@ -1,0 +1,131 @@
+.button {
+  padding: 0.5rem 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  // Variants
+  &.filled {
+    font-weight: 700;
+
+    &.primary {
+      color: var(--color-light);
+      background-color: var(--color-primary);
+
+      &:disabled {
+        color: #000;
+        background-color: #e7e7e7;
+        cursor: default;
+      }
+
+      // &:hover:enabled {
+      //   background: color-mix(in oklab, var(--color-primary), #000 15%);
+      // }
+    }
+
+    &.secondary {
+      color: var(--color-light);
+      background-color: var(--color-secondary);
+
+      &:disabled {
+        color: #000;
+        background-color: #e7e7e7;
+        cursor: default;
+      }
+    }
+
+    &.light {
+      color: var(--color-light-dark);
+      background-color: var(--color-very-light);
+    }
+  }
+
+  &.outline {
+    font-weight: 700;
+    background-color: #fff;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+
+    &.light {
+      color: var(--color-light-dark);
+      background-color: #f7f7f7;
+      border: 1px solid #c5ccdb;
+      border-radius: 10px;
+    }
+  }
+
+  &.square {
+    border-radius: 0.4rem;
+    font-size: .9rem;
+  }
+
+  &.pill {
+    border-radius: 9999rem;
+  }
+
+  // Icon positioning
+  &.icon-left {
+    .icon {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &.icon-right {
+    .icon {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &.full {
+    width: 100%;
+    font-size: 1.125;
+  }
+
+  &.lg {
+    width: 12.5rem;
+    font-size: 1rem;
+  }
+
+  &.md {
+    width: 10rem;
+    font-size: 0.875rem;
+  }
+
+  &.sm {
+    width: 6.25rem;
+    font-size: 0.875rem;
+    padding: 0.7rem 2rem;
+  }
+
+  &.fit {
+    width: max-content;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.25rem;
+
+
+  }
+
+  &.thin {
+    font-weight: 400;
+  }
+
+  &.normal {
+    font-weight: 500;
+  }
+
+  &.special-fit {
+    padding: 4.5px 12px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
+}

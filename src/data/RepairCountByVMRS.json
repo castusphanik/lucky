@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Tires",
+    "value": 10
+  },
+  {
+    "label": "Subframe",
+    "value": 20
+  },
+  {
+    "label": "Liftgate",
+    "value": 12.5
+  },
+  {
+    "label": "Lights",
+    "value": 17.5
+  },
+  {
+    "label": "Refrigeration",
+    "value": 4
+  },
+  {
+    "label": "Brakes",
+    "value": 7
+  }
+]

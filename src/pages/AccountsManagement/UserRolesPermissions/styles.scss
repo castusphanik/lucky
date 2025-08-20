@@ -1,0 +1,42 @@
+.userRolesPermissions {
+  background-color: var(--color-light);
+  padding: 10px;
+  min-height: 50vh;
+  border-radius: 20px;
+
+  &__actions-container {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .right-section {
+      gap: 1rem;
+
+      button {
+        padding: 0.4rem 0.85rem;
+        font-size: 0.85rem;
+      }
+    }
+
+    .edit-actions-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .actions {
+        border: 1px solid var(--color-border);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        padding: 2px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__table-section {
+    margin-top: 20px;
+  }
+}

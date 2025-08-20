@@ -1,0 +1,40 @@
+.billing-invoices {
+  padding:10px;
+
+  &__actions-container {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 0.8rem;
+   
+
+    .right-section {
+      gap: 1rem;
+
+      button {
+        padding: 0.4rem 0.85rem;
+        font-size: 0.85rem;
+      }
+
+       .filter-btn {
+      border-color: #00000020;
+      color: #000000;
+
+      &.active {
+        border-color: transparent;
+        background-color: #1c8c6e;
+        color: #fff;
+      }
+    }
+
+    .filter-icon {
+      filter: invert(100%) sepia(44%) saturate(0%) hue-rotate(144deg) brightness(108%)
+        contrast(101%);
+    }
+    }
+  }
+
+
+   
+}

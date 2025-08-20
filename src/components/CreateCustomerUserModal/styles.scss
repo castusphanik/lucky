@@ -1,0 +1,16 @@
+.customer-user-modal {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 12px 0;
+    overflow-y: hidden;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-top: 20px;
+  }
+}

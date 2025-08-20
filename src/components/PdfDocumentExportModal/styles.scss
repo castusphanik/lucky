@@ -1,0 +1,21 @@
+.upload-data-file-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+   &__checkbox-bg{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 10px;
+   }
+
+
+    &__button-bg-container{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+}

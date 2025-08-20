@@ -1,0 +1,61 @@
+.horizontal-stepper {
+  background-color: transparent;
+
+  .MuiStepLabel-label {
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  .step-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+
+    &.completed {
+      background-color: var(--color-green);
+      color: var(--color-light);
+    }
+
+    &.active {
+      border: 2px solid var(--color-primary);
+      background-color: var(--color-light);
+      color: var(--color-primary);
+    }
+
+    &.upcoming {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccc;
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .step-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .step-date {
+    font-size: 0.7rem;
+    color: #888;
+  }
+
+  // .MuiStepConnector-root.MuiStepConnector-alternativeLabel {
+  //   top: 0 !important;
+  // }
+
+  .css-1k25ou6-MuiStepConnector-root {
+    left: calc(-50% + 1rem) !important;
+    right: calc(49% + 1.1rem) !important;
+  }
+}

@@ -1,0 +1,25 @@
+
+
+.toast-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(41, 42, 45, 0.8);
+  z-index: 9999;
+  animation: overlayIn 0.15s ease-out forwards;
+}
+
+@keyframes overlayIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+

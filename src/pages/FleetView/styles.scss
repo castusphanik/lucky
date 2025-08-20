@@ -1,0 +1,55 @@
+.fleet-view-info-card {
+  width: 140px !important;
+
+  .MuiCardContent-root {
+    p.MuiTypography-root {
+      font-size: 14px;
+      // width: 120px;
+    }
+  }
+
+}
+
+// Filter styles
+.filters-wrapper {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 1rem;
+
+  .filters-inputs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    >div {
+      min-width: 200px;
+      flex: 1;
+    }
+  }
+
+  .search-btn {
+    background-color: #1c8c6e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #167a5f;
+    }
+  }
+}
+
+.filter-btn {
+  border-color: #00000020;
+  color: #000000;
+
+  &.active {
+    border-color: transparent;
+    background-color: #1c8c6e;
+    color: #fff;
+  }
+}

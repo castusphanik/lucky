@@ -1,0 +1,32 @@
+:root {
+  --color-input-label: #000;
+  --color-input-placeholder: #B4B4B8;
+  --color-input-border: #b2c2e2;
+  --color-input-selected: #f3f7fd;
+
+  --input-font-family: "Poppins", sans-serif;
+  --input-font-size: 0.8rem;
+  --input-border: 1px solid var(--color-input-border);
+  --input-border-radius: 0.35rem;
+}
+
+.input-container {
+  position: relative;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    color: var(--color-input-label);
+
+    span {
+      color: red;
+    }
+  }
+
+  .input-error {
+    color: red;
+    font-size: 0.7rem;
+    min-height: 19px;
+  }
+}

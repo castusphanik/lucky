@@ -1,0 +1,81 @@
+.account-details {
+  background-color: var(--color-light);
+  padding: 10px;
+  min-height: 50vh;
+  border-radius: 20px;
+
+  &__header {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--color-background);
+    border-radius: 10px;
+  }
+
+  &__actions-container {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .right-section {
+      gap: 1rem;
+
+      button {
+        padding: 0.4rem 0.85rem;
+        font-size: 0.85rem;
+      }
+    }
+
+    .filter-btn {
+      border-color: #00000020;
+      color: #000000;
+
+      &.active {
+        border-color: transparent;
+        background-color: #1c8c6e;
+        color: #fff;
+      }
+    }
+
+    .filter-icon {
+      filter: invert(100%) sepia(44%) saturate(0%) hue-rotate(144deg) brightness(108%) contrast(101%);
+    }
+  }
+
+  &__filters-wrapper {
+    margin-bottom: 0.4rem;
+    background-color: var(--color-background);
+
+    .search-btn {
+      width: 80px !important;
+    }
+  }
+
+  &__filter-inputs-container {
+    width: calc(100% - 80px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.75rem;
+
+    .input-error {
+      display: none;
+    }
+  }
+
+  &__table-section {
+    margin-top: 10px;
+  }
+
+  &__user-name {
+    color: var(--color-primary);
+    font-weight: 600;
+    cursor: pointer;
+
+    .label {
+      background-color: #e6f0d7;
+      padding: 0 5px;
+      color: var(--color-dark);
+      font-size: 0.8rem;
+    }
+  }
+}

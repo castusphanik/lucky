@@ -1,0 +1,27 @@
+.barChartContainerHorizontal {
+  width: 100%;
+  height: 400px;
+
+}
+
+.barChartHorizontal {
+  /* width: 600px; */
+  height: 400px;
+  position: relative;
+}
+
+/* Optional: Add responsive breakpoints */
+@media (max-width: 768px) {
+  .barChartContainerHorizontal {
+    padding: 15px;
+    height: 350px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .barChartContainerHorizontal {
+    padding: 10px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,141 @@
+.table-container {
+  width: 100%;
+  height: 80vh;
+  background-color: #fff;
+  position: relative;
+
+  .table {
+    max-height: 500px;
+    width: 100%;
+    overflow: auto;
+
+
+
+    &__cell-title-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      position: relative;
+
+      .sort-icon {
+        cursor: pointer;
+        font-size: 18px;
+        color: #566d80;
+        // min-height: ;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th,
+      td {
+        padding: 0.85em 1em;
+        font-size: 0.8rem;
+      }
+
+      thead {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+
+        tr {
+          background-color: #ecf2ff;
+        }
+
+        th {
+          text-align: left;
+          white-space: nowrap;
+          font-size: 0.85rem;
+          font-weight: 600;
+          cursor: default;
+
+          &:hover .sort-icon {
+            visibility: visible;
+          }
+        }
+      }
+
+      tbody {
+        width: 100%;
+
+        tr {
+          border-bottom: 2px solid #eff1f4;
+        }
+
+        td {
+          font-weight: 400;
+          max-width: 300px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    &__expandable-content-cell {
+      padding: 0 !important;
+    }
+
+    &__no-data {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      font-weight: 500;
+      font-size: 1.15rem;
+      color: #00000050;
+    }
+
+    &__spinner-wrapper {
+      top: 45px;
+      height: calc(100% - 45px);
+    }
+  }
+
+  .pagination-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+
+    .Mui-selected {
+      background-color: var(--color-primary);
+      color: #fff;
+      font-weight: bold;
+
+      &:hover {
+        background-color: var(--color-primary);
+      }
+    }
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      p {
+        // font-weight: 500;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .pagination-loading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0 15px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+}

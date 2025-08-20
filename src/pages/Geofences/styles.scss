@@ -1,0 +1,211 @@
+.geofences {
+  background-color: var(--color-light);
+  padding: 10px;
+  min-height: 50vh;
+  border-radius: 20px;
+
+  &__actions-container {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin-top: 10px;
+  }
+}
+
+.activity-feed {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    .status-card {
+      width: auto;
+    }
+  }
+
+  &__card {
+    min-width: 0;
+  }
+
+  &__table {
+    margin-top: 1rem;
+  }
+}
+
+.telematics-alerts {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    .status-card {
+      width: auto;
+    }
+  }
+
+  &__card {
+    min-width: 0;
+  }
+
+  &__table {
+    margin-top: 1rem;
+  }
+}
+
+.geofences-content {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    .status-card {
+      width: auto;
+    }
+  }
+
+  &__card {
+    min-width: 0;
+  }
+
+  &__view-toggle {
+    margin-bottom: 1rem;
+  }
+
+  &__table {
+    margin-top: 1rem;
+  }
+
+  &__map {
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    position: relative;
+
+    &-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    // Autocomplete positioning
+    .autocomplete-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      max-width: 350px;
+    }
+  }
+
+  // Vertex button styles
+  .remove-vertex-btn {
+    min-width: 60px !important;
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+
+  .add-vertex-btn {
+    margin-top: 8px !important;
+  }
+
+  // Table styles for geofence name highlighting
+  .geofences-content__table {
+    .geofence-name-link {
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--color-primary-dark) !important;
+      }
+    }
+  }
+}
+
+.geofence-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .detail-label {
+        font-weight: 600;
+        color: #333;
+        min-width: 200px;
+        flex-shrink: 0;
+      }
+
+      .detail-value {
+        color: #666;
+        text-align: right;
+        flex: 1;
+        word-break: break-word;
+      }
+    }
+  }
+
+  &__map {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 300px;
+  }
+}
+
+.geofences-list {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.geofence-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+  &__info {
+    flex: 1;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+.add-geofence-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: white;
+  border: 1px solid #ddd;
+}

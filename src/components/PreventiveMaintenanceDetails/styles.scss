@@ -1,0 +1,27 @@
+.pm-details {
+    margin: 2rem;
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    overflow-x: hidden;
+
+    &__left-pane {
+        width: 30%;
+    }
+
+    &__vertical-line {
+        width: 2px;
+        height: 100%;
+        background-color: #ccc;
+        margin: 0 2rem;
+    }
+
+    &__right-pane {
+        width: 70%;
+
+        p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+    }
+}

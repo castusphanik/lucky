@@ -1,0 +1,32 @@
+.create-role {
+  padding: 0.5rem;
+
+  .multi-select-container {
+    width: 250px;
+    position: relative;
+
+    .input-error {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: red;
+      font-size: 0.7rem;
+      min-height: 19px;
+    }
+  }
+
+  .dropdown-popover {
+    padding: 5px;
+  }
+
+  &__form-container {
+    width: 55vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+
+    .description-input {
+      grid-column: span 2;
+    }
+  }
+}

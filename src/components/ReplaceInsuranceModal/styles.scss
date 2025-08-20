@@ -1,0 +1,15 @@
+.replace-insurance-modal{
+    overflow-y:hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &__button-bg-container{
+        display: flex;
+        gap:20px;
+        margin-top: 10px;
+    }
+
+
+
+}

@@ -1,0 +1,64 @@
+.user-management {
+  &__actions-container {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .right-section {
+      gap: 1rem;
+
+      button {
+        padding: 0.4rem 0.85rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    .filter-btn {
+      border-color: #00000020;
+      color: #000000;
+
+      &.active {
+        border-color: transparent;
+        background-color: #1c8c6e;
+        color: #fff;
+      }
+    }
+
+    .filter-icon {
+      filter: invert(100%) sepia(44%) saturate(0%) hue-rotate(144deg) brightness(108%)
+        contrast(101%);
+    }
+
+    .assign-btn {
+      padding: 0.58rem 0.85rem !important;
+    }
+  }
+
+  &__status {
+    padding: 0.3rem 0.85rem;
+    border: 1px solid #00000050;
+    border-radius: 6px;
+    width: fit-content;
+    gap: 0.5rem;
+  }
+
+  &__user-name {
+    color: var(--color-primary);
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__user-account {
+    .label {
+      background-color: #e6f0d7;
+      padding: 0 5px;
+    }
+
+    .id {
+      color: var(--color-link);
+      font-weight: 600;
+      font-size: 0.75rem;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.account-preferences {
+    margin: 10px;
+    // height: 600px;
+    // overflow-y: scroll;
+
+    &__section {
+        border: 1px solid #a8ceef;
+        margin: 1.5rem 0;
+        padding: 1rem;
+    }
+
+    &__payment {
+        margin-top: 1rem;
+    }
+
+    &__types {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    &__payment-item {
+        width: 100%;
+        padding: 1.2rem;
+        background: #f1f6fa;
+    }
+
+    &__currency-item {
+        width: 100%;
+        padding: 1.2rem;
+        margin-top: 10px;
+        border: 1px solid #a8ceef;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__settings {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,356 @@
+.dev-extreme-table-container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+
+  .dx-datagrid {
+    font-family: var(--font-secondary) !important;
+
+    .dx-datagrid-header-panel {
+      display: none !important;
+    }
+
+    .dx-datagrid-headers {
+      background-color: #ecf2ff;
+      text-align: left !important;
+      white-space: nowrap;
+      font-size: 0.85rem;
+      font-weight: 300;
+      cursor: default;
+      font-family: var(--font-secondary) !important;
+
+      .dx-datagrid-headers-table {
+        th {
+          font-size: 0.85rem;
+          font-weight: 300;
+          height: 100px;
+          // text-align: left !important;
+        }
+      }
+    }
+
+    .dx-datagrid-rowsview {
+      .dx-datagrid-table {
+        .dx-row {
+          border-bottom: 2px solid #ecf2ff;
+          background-color: #fff;
+          // text-align: left !important;
+
+          &.dx-row-alt {
+            background-color: #fff;
+          }
+        }
+
+        .dx-data-row {
+          td {
+            font-size: 0.8rem;
+            font-weight: 400;
+            padding: 0.85em 1em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            // text-align: left !important;
+          }
+        }
+      }
+    }
+
+    .dx-datagrid-pager {
+      background-color: #fff;
+      padding: 10px;
+
+      .dx-pager-info {
+        font-size: 0.9rem;
+      }
+
+      .dx-pager-page-sizes {
+        .dx-page-size {
+          border: 2px solid #eee;
+          border-radius: 5px;
+          background-color: #fff;
+        }
+      }
+    }
+
+    .dx-datagrid-filter-row {
+      background-color: #f9f9f9;
+
+      .dx-filter-cell {
+        padding: 8px;
+
+        .dx-texteditor {
+          border: 1px solid #ddd;
+          border-radius: 4px;
+
+          &.dx-state-focused {
+            border-color: var(--color-primary);
+          }
+        }
+      }
+    }
+
+    .dx-checkbox-checked {
+      .dx-checkbox-icon {
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+        color: #fff;
+      }
+    }
+
+    // Custom header cell styles with search and clear icons
+    .dx-header-cell {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 8px;
+
+      &__title {
+        flex: 1 1 auto;
+        font-weight: 500;
+      }
+
+      &__filters {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-left: auto;
+      }
+    }
+
+    // Search and clear filter icons
+    .dx-header-filter {
+      &__search {
+        font-size: 12px;
+        color: #6b7280;
+        cursor: default;
+      }
+
+      &__clear {
+        font-size: 12px;
+        color: #ef4444;
+        cursor: pointer;
+        padding: 2px 4px;
+        border-radius: 3px;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: #fef2f2;
+        }
+      }
+    }
+
+    // Header menu styles (3-dots menu on last column)
+    .dx-header-menu {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+
+      &__title {
+        flex: 1 1 auto;
+      }
+
+      &__clear-filters {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 1;
+        padding: 4px 6px;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+        opacity: 0.7;
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+      }
+
+      &__btn {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 1;
+        padding: 4px 6px;
+        border-radius: 4px;
+      }
+
+      &__dropdown {
+        position: absolute;
+        top: calc(100% + 6px);
+        right: 0;
+        z-index: 20;
+        min-width: 160px;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        padding: 6px 0;
+      }
+
+      &__item {
+        padding: 8px 12px;
+        font-size: 0.875rem;
+        cursor: pointer;
+      }
+
+      &__item:hover {
+        background: #f3f4f6;
+      }
+    }
+  }
+
+  // Loading state
+  .dx-loadindicator {
+    .dx-loadindicator-content {
+      color: var(--color-primary);
+    }
+  }
+
+  // Export button styling
+  .dx-toolbar {
+    .dx-toolbar-items-container {
+      .dx-toolbar-item {
+        .dx-button {
+          background-color: var(--color-primary);
+          border-color: var(--color-primary);
+          color: white !important;
+
+          &:hover {
+            background-color: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+
+  .dx-pager .dx-page-sizes .dx-page-size.dx-first-child,
+  .dx-pager .dx-page-sizes .dx-page-size:first-child,
+  .dx-pagination .dx-page-sizes .dx-page-size.dx-first-child,
+  .dx-pagination .dx-page-sizes .dx-page-size:first-child {
+    background: var(--color-primary);
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .dx-datagrid-headers {
+    .dx-header-row td {
+      background-color: #ecf2ff;
+      border: none !important;
+      border-bottom: none !important;
+      border-top: none !important;
+      font-size: 0.8rem;
+
+      font-weight: 500;
+      color: #000;
+      padding: 12px 16px;
+      height: 42px;
+    }
+  }
+
+  .dx-datagrid-borders>div {
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+  }
+
+  .dx-checkbox {
+    .dx-checkbox-icon {
+      width: 18px !important;
+      height: 18px !important;
+      border: 2px solid #d1d5db !important;
+      border-radius: 4px !important;
+      background-color: #fff !important;
+    }
+
+    &.dx-checkbox-checked .dx-checkbox-icon {
+      background-color: var(--color-primary) !important;
+      border-color: var(--color-primary) !important;
+      color: #fff !important;
+    }
+  }
+
+  .dx-datagrid-filter-row {
+    background-color: #f8fafc;
+    border-bottom: none !important;
+
+    td {
+      border: none !important;
+      border-bottom: none !important;
+      padding: 12px 16px;
+      background-color: #fff !important;
+
+      .dx-texteditor {
+        background-color: #fff;
+        border: 1px solid #ecf2ff;
+        border-radius: 6px;
+
+        .dx-texteditor-input {
+          padding: 8px 12px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  // .dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+  //   text-align: left !important;
+  // }
+}
+
+.dev-extreme-table-container {
+  .dx-datagrid {
+
+    .dx-row.dx-selection,
+    .dx-row.dx-selection>td,
+    .dx-row.dx-selection.dx-row-lines>td,
+    .dx-row.dx-selection.dx-row-alt>td {
+      background: #fff !important;
+      color: inherit !important;
+    }
+
+    .dx-row.dx-state-hover>td {
+      background: #fff !important;
+    }
+
+    .dx-row.dx-row-focused.dx-selection>td {
+      background: #fff !important;
+      outline: none !important;
+    }
+  }
+}
+
+.dev-extreme-table-container .dx-toolbar .dx-toolbar-items-container .dx-toolbar-item .dx-button {
+  background: transparent;
+}
+
+.dx-datagrid-content .dx-datagrid-table .dx-row .dx-editor-cell:not(.dx-datagrid-cell-expandable) {
+  padding: 0 0.75rem !important;
+  text-align: left !important;
+}
+
+/* Narrow selection checkbox column and icon a bit more */
+.dev-extreme-table-container {
+  .dx-datagrid {
+
+    .dx-header-row .dx-command-select,
+    .dx-data-row .dx-command-select {
+      width: 28px !important;
+      min-width: 28px !important;
+      max-width: 28px !important;
+      padding-left: 2px !important;
+      padding-right: 2px !important;
+    }
+
+    .dx-checkbox .dx-checkbox-icon {
+      width: 14px !important;
+      height: 14px !important;
+    }
+  }
+}
+
+.dx-datagrid-content .dx-datagrid-table .dx-row>td {
+  vertical-align: middle !important;
+}

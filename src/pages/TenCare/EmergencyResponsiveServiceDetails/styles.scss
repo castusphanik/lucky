@@ -1,0 +1,15 @@
+.emergency-responsive-details-container {
+    margin: 1rem;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__maintenance {
+        display: flex;
+        gap: 1rem;
+        margin: 1.8rem 0;
+    }
+}

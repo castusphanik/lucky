@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #eff1f4;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #6e8295;
+    border-radius: 5px;
+  }
+}
+
+:root {
+  --font-primary: 'Public Sans', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+
+  --color-background: #ecf2ff;
+  --color-primary: #387bfe;
+  --color-primary-light: #b2c2e3;
+  --color-secondary: #1344a3;
+  --color-light: #ffffff;
+  --color-border: #cfe4ef;
+  --layout-background: #f8fafc;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-section-title: rgba(0, 0, 0, 0.5);
+  --color-sidebar-tab: #dbeafe;
+  --color-icon: #387bfe;
+  --color-text: #07124d;
+  --color-dark: #000000;
+  --color-no-btn: #e7e7e7;
+  --color-green: #2ecc71;
+  --color-link: #1f339f;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --color-over-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --color-label: #64748b;
+  --color-placeholder: rgba(0, 0, 0, 0.6);
+  --color-radio-background: #dfeffe;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.filters-wrapper {
+  margin-bottom: 0.5rem;
+  background-color: var(--color-background);
+
+  .search-btn {
+    width: 80px !important;
+  }
+}
+
+.filters-inputs-container {
+  // width: calc(100% - 80px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.75rem;
+
+  .input-error {
+    display: none;
+  }
+}
+
+.MuiListItemText-root {
+  white-space: break-spaces;
+
+  span {
+    font-size: 13px;
+  }
+}
+
+.MuiButtonBase-root.MuiMenuItem-root {
+  padding: 0;
+}
+
+.MuiCheckbox-root {
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.gm-style-iw.gm-style-iw-c {
+  max-width: 800px !important;
+
+  width: 750px;
+}
+
+.custom-checkbox {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+
+  &:checked {
+    accent-color: var(--color-primary);
+  }
+}

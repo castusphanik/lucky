@@ -1,0 +1,56 @@
+.map-marker-card {
+  position: relative;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 10px;
+
+  &__header {
+    background-color: #e8f0fe;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  &__content-section {
+    padding: 15px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    svg {
+      color: #6e6e6e;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__button {
+    align-self: flex-start;
+    text-transform: none;
+    margin-top: 25px !important;
+  }
+
+  &__pointer {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+  }
+}

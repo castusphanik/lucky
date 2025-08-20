@@ -1,0 +1,41 @@
+.create-ers-incident{
+    overflow-y:hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+     &__form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+   
+
+
+    &__button-bg-container{
+        
+        margin-top: 10px;
+    }
+
+
+
+
+.file-upload__left-section P {
+    font-size: 7px;
+    color: #566d80;
+}
+
+.file-upload__left-section img {
+    height:18px;
+    width:18px;
+}
+.file-upload__label-button{
+    font-size: 8px;
+    width: 50px;
+      padding: 5px;
+}
+
+
+
+
+
+}
